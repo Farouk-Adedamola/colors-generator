@@ -1,0 +1,62 @@
+.each-color {
+  border-radius: 5px 0 5px 0;
+  padding: 0.6rem 0;
+}
+
+.each-color:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: translateY(-6px);
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 760px) {
+  .each-color {
+    padding: 1.2rem 0;
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      transform: scale(1.04);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.04);
+    }
+  }
+}
+
+.alert {
+  font-size: small;
+  font-weight: normal;
+  color: #900;
+}
+
+.each-color > p {
+  text-align: center;
+  color: #23689b;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container button {
+  background: #000;
+  color: #49a6e9;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.7rem;
+}
+
+.container button:hover {
+  background: rgba(0, 0, 0, 0.878);
+}

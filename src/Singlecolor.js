@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Singlecolor.css";
 
 const Singlecolor = ({ rgb, weight, index, hexCode }) => {
   const [alert, setAlert] = useState(false);
@@ -18,13 +19,17 @@ const Singlecolor = ({ rgb, weight, index, hexCode }) => {
   };
   return (
     <section
-      className={`color ${index > 20 && "color-light"}`}
+      className={`each-color ${index > 15 && "color-light"}`}
       style={{ backgroundColor: `rgb(${bcg})` }}
       onClick={copyHandler}
     >
-      <p>{weight}</p>
-      <p>{hexValue}</p>
-      {alert && <p className="alert">copied to clipboard</p>}
+      <p>{weight} %</p>
+      <div className="container">
+        {alert && <p className="alert">copied to clipboard</p>}
+        <button type="button" onClick={copyHandler}>
+          {hexValue}
+        </button>
+      </div>
     </section>
   );
 };

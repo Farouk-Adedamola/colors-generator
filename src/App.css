@@ -1,3 +1,76 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+  color: #23689b;
+  text-shadow: 0px 3px 2px #000;
+  text-transform: capitalize;
+}
+
+.error {
+  border: 2px solid #900;
+}
+
 .input {
-  border: 2px solid #344566;
+  background-color: #fff;
+  margin-right: 10px;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.form button {
+  background: #23689b;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 1rem;
+  border: none;
+}
+
+.form button:hover {
+  background: #3c93d5e0;
+  transform: scaleY(1.05);
+  transition: all 0.4s;
+}
+
+.map-area {
+  display: grid;
+  width: 95vw;
+  margin: 2rem auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+}
+/* media screen */
+
+@media screen and (min-width: 760px) {
+  .section {
+    flex-direction: row;
+    margin-top: 0;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  .section h1 {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .map-area {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem auto;
+  }
+  .input {
+    padding: 0.5rem 3rem;
+    text-align: center;
+    width: 50px;
+  }
 }
