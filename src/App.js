@@ -20,7 +20,7 @@ function App() {
     }
   };
 
-  document.getElementById("body").style.backgroundColor = `${color}`;
+  document.getElementById("body").style.backgroundColor = `${setColor}`;
 
   return (
     <Fragment>

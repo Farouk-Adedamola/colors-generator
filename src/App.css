@@ -23,6 +23,8 @@
   padding: 0.5rem 0;
   border-radius: 5px;
   border: none;
+  padding: 0.7rem 0.5rem;
+  caret-color: #900;
 }
 
 .form button {
@@ -72,5 +74,6 @@
     padding: 0.5rem 3rem;
     text-align: center;
     width: 50px;
+    /* margin-left: 5px; */
   }
 }
