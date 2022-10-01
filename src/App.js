@@ -20,8 +20,8 @@ function App() {
     }
   };
 
-  document.getElementById("body").style.backgroundColor = `${setColor}`;
-
+  document.getElementById("body").style.backgroundColor = `${color}`;
+  // #344544
   return (
     <Fragment>
       <section className="section">
