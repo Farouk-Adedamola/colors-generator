@@ -6,12 +6,12 @@ import Singlecolor from "./Singlecolor";
 function App() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [getColors, setGetColors] = useState(new Values("#303F54").all(15));
+  const [getColors, setGetColors] = useState(new Values("#303F54").all(10));
 
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      let colors = new Values(color).all(15);
+      let colors = new Values(color).all(10);
       setGetColors(colors);
       color("");
       console.log(colors);
